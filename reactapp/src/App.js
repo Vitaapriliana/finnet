@@ -1,25 +1,41 @@
-import logo from './logo.svg';
-import './App.css';
+import Utama from "./components/main";
+import React from "react";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+class App extends React.Component {
+  render() {
+    return (
+      <div>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-secondary">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="/">
+              Beranda
+            </a>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+              <div class="navbar-nav">
+                <a class="nav-item nav-link" href="#">
+                  Jadwal
+                </a>
+                <a class="nav-item nav-link" href="#">
+                  IIS
+                </a>
+                <a class="nav-item nav-link" href="#">
+                  Incident
+                </a>
+                <a class="nav-item nav-link" href="#">
+                  Contact
+                </a>
+                {/* <a class="nav-item nav-link" href="/alpro">
+                  Alpro Critical
+                </a> */}
+              </div>
+            </div>
+          </div>
+        </nav>
+          <Utama />
+      </div>
+      
+    );
+  }
 }
 
 export default App;
