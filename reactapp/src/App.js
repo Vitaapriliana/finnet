@@ -24,9 +24,9 @@ class App extends React.Component {
                 <a class="nav-item nav-link" href="#">
                   Contact
                 </a>
-                {/* <a class="nav-item nav-link" href="/alpro">
+                <a class="nav-item nav-link" href="/alpro">
                   Alpro Critical
-                </a> */}
+                </a>
               </div>
             </div>
           </div>
